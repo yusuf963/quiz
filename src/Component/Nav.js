@@ -1,19 +1,21 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import img from '../assets/logo.png'
 
 const Navigation = () => {
   return <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-    <Navbar.Brand href="/"><img style={{ width: '70px', height: '50px', marginLeft: '10px' }} src={img} alt="quiz-logo" /></Navbar.Brand>
+    <Navbar.Brand><Link to='/'> <img style={{ width: '70px', height: '50px', marginLeft: '10px' }} src={img} alt="quiz-logo" /></Link></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="mr-auto">
-        <Nav.Link href="/quiz/">Home</Nav.Link>
-        <Nav.Link href="/quiz/quiz">Quiz</Nav.Link>
+
+        <Nav.Link> <Link to="/quiz/home">Home</Link > </Nav.Link >
+        <Nav.Link><Link to="/quiz/quiz" >Quiz</Link ></Nav.Link >
+        <Nav.Link><Link to="/quiz/about">About</Link ></Nav.Link >
       </Nav>
       <Nav>
-        <Nav.Link href="/quiz/about">About</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

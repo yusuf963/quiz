@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Navigation from './Nav'
 import './home.css'
 
@@ -10,9 +11,9 @@ const HomePage = () => {
       <p className='home-text'>Engage in thrilling trivia questions from a long list of categories. There are thousands of questions available!</p>
       <p className='home-text'>What score will you get?</p>
       <p className='home-text'>Best of luck!</p>
-      <a className='play-now' href='/quizapp/quiz'>Play now </a> 
+      <Link className='play-now' to='/quiz/quiz'>Play now </Link>
     </div>
-  </div> 
+  </div>
 }
 
 export default HomePage
