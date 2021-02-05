@@ -8,10 +8,10 @@ import './styles/style.scss'
 const App = () => (
   <BrowserRouter>
     <Switch>
-      <Route path="/home" component={() => <HomePage />} />
-      <Route path="/quiz" component={() => <Quiz />} />
-      <Route path="/about" component={() => <About />} />
-      <Redirect to="/home" />
+      <Route path="/quizapp/home" component={() => <HomePage />} />
+      <Route path="/quizapp/quiz" component={() => <Quiz />} />
+      <Route path="/quizapp/about" component={() => <About />} />
+      <Redirect to="/quizapp/home" />
     </Switch>
   </BrowserRouter>
 )
