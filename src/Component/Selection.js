@@ -43,7 +43,6 @@ const Selection = ({ updateQuestionNumber, setCategory, runApi, setHasStarted })
       <option value='27'>Animals</option>
       <option value='28'>Vehicles</option>
     </select>
-
     <button className='start-game' onClick={()=> {
       runApi()
       setHasStarted(true)

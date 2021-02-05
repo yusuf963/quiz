@@ -10,7 +10,7 @@ const HomePage = () => {
       <p className='home-text'>Engage in thrilling trivia questions from a long list of categories. There are thousands of questions available!</p>
       <p className='home-text'>What score will you get?</p>
       <p className='home-text'>Best of luck!</p>
-      <a className='play-now' href='/quiz'>Play now </a> 
+      <a className='play-now' href='/quizapp/quiz'>Play now </a> 
     </div>
   </div> 
 }
