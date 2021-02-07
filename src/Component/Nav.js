@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './Nav.css'
 import img from '../assets/logo.png'
 
 const Navigation = () => {
@@ -10,9 +11,9 @@ const Navigation = () => {
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="mr-auto">
-        <Nav.Link> <Link to="/quiz/home">Home</Link> </Nav.Link >
-        <Nav.Link><Link to="/quiz/quiz" >Quiz</Link ></Nav.Link >
-        <Nav.Link><Link to="/quiz/about">About</Link ></Nav.Link >
+        <Nav.Link> <Link className='link-item' to="/quiz/home">Home</Link> </Nav.Link >
+        <Nav.Link><Link className='link-item' to="/quiz/quiz" >Quiz</Link ></Nav.Link >
+        <Nav.Link><Link className='link-item' to="/quiz/about">About</Link ></Nav.Link >
       </Nav>
       <Nav>
       </Nav>
