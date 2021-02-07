@@ -34,7 +34,7 @@ p{
 	margin-top: 10px ;
 	text-decoration: none;
   text-shadow: 0px 1px 0px #2f6627;
-	width: 500px;
+	width: 50vw;
 	outline-style: none;
 }
 
@@ -91,8 +91,13 @@ p{
   animation-name: fadeOut;
 }
 
-/* @media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px){
 .currentquestion{
-  background-color : red;
+  font-size:18px ;
 }
-} */
+.questionBtn {
+	width: 70vw;
+	outline-style: none;
+  font-size:14px
+}
+}
