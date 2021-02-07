@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import {Link} from 'react-router-dom'
 import Selection from './Selection'
 import Navigation from './Nav'
 import './quiz.css'
@@ -113,7 +114,7 @@ const Quiz = () => {
         {(previousAnswer === false) && <p className='animated fadeOut isWrong'>WRONG</p>}
         {(previousAnswer === true) && <p className='animated fadeOut isCorrect'>CORRECT</p>}
         <h1>Game over!</h1>
-        {<a className='play-now' href='/quiz'>Play again?</a>}
+        {<Link className='play-now' to='/quiz'>Play again?</Link>}
         </>}
         {<p>Your score is: {score}/{questionNumber}</p>}
         </>}</div>}
