@@ -1,0 +1,83 @@
+.main-container {
+  background: url('../assets/background.jpg');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin-top: 0%;
+  overflow: hidden;
+  position: fixed;
+}
+.hero-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 60vw;
+  margin: 10% auto;
+  background-color: rgba(245, 245, 245, 0.856);
+  padding: 25px;
+}
+/* input {
+  width: 270px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  outline-style: none;
+} */
+
+h1 {
+  margin: 20px;
+}
+
+.home-text {
+  font-size: 20px;
+  padding: 0px 40px;
+  color: black;
+}
+
+.submit-btn {
+  margin: 30px 0px;
+  background-color: #44c767;
+  border-radius: 28px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+
+select,input {
+  margin: 20px;
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+  outline-style: none;
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  input{
+    width: 200px;
+  }
+  .home-text {
+    font-size: 16px;
+  }
+  select{
+    width: 200px;
+  }
+  Table{
+  width: 200px;   
+  }
+  h4{
+    font-size: 16px;
+  }
+}
